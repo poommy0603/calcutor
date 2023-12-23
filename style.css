@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    -webkit-transition:0.3s;
+   
+}
+
+.container {
+    background-color: hsl(222, 26%, 31%);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cal {
+    width: 630px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    /* border: 1px solid red; */
+}
+
+.head {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    position: absolute;
+    width: 100%;
+    margin-top: -50px;
+    /* border: 1px solid red; */
+}
+
+.head h1 {
+    font-weight: 800;
+}
+
+.answer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    height: 140px;
+    margin-top: 15px;
+    color: white;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.answer h1 {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.grid-cal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 30px;
+    background-color: hsl(223, 31%, 20%);
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.grid-cal button {
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    border: 0px;
+    border-radius: 5px;
+    border-bottom: 4px solid hsl(28, 16%, 65%);
+    cursor: pointer;
+    
+}
+
+
+.grid-cal .delete {
+    border-bottom: 4px solid hsl(224, 28%, 35%);
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    font-size: 30px;
+}
+
+.grid-cal .clear-btn {
+    border-bottom: 4px solid hsl(224, 28%, 35%);
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    font-size: 30px;
+    grid-column: span 2;
+}
+
+.grid-cal .equal {
+    color: white;
+    background-color: red;
+    border-bottom: 4px solid hsl(6, 70%, 34%);
+    grid-column: span 2;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    position: absolute;
+    top: -16px;
+    margin-left: 86px;
+    font-weight: 600;
+}
+
+.text label {
+    padding: 5px;
+}
+
+.theme p {
+    margin-right: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.theme1 {
+    background-color: red;
+}
+
+form {
+    background-color: #1b233e;
+    border-radius: 12px;
+    padding:5px;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1400px) {
+    .cal {
+        width: 90%;
+        left: 65px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cal {
+        width: 90%; /* Adjust as needed for medium screens */
+        left: 5%; /* Adjust as needed for medium screens */
+    }
+    .container {
+        background-color: hsl(222, 26%, 31%);
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cal {
+        width: 90%;
+        height: 9px; /* Adjust as needed for smaller screens */
+        left: 5%; 
+        top: 110px;/* Adjust as needed for smaller screens */
+    }
+
+   
+    .container {
+        background-color: hsl(222, 26%, 31%);
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cal {
+        width: 90%; /* Adjust as needed for extra small screens */
+        left: 5%;
+        height: -0vh; /* Adjust as needed for smaller screens */ 
+        top: 450px; /* Adjust as needed for extra small screens */
+    }
+    .container {
+        background-color: hsl(222, 26%, 31%);
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+}
+
+
