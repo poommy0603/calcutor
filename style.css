@@ -3,8 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
-    -webkit-transition:0.3s;
-   
+    transition: all 0.2s;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -18,12 +24,12 @@
 }
 
 .cal {
-    width: 630px;
+    max-width: 90%;
     display: flex;
     margin: auto;
     flex-direction: column;
     position: absolute;
-    top: 110px;
+    margin-top: 50px;
     /* border: 1px solid red; */
 }
 
@@ -151,7 +157,7 @@ form {
     justify-content: space-between;
 }
 
-@media screen and (max-width:1400px) {
+/* @media screen and (max-width:1400px) {
     .cal {
         width: 90%;
         left: 65px;
@@ -160,8 +166,8 @@ form {
 
 @media screen and (max-width: 1200px) {
     .cal {
-        width: 90%; /* Adjust as needed for medium screens */
-        left: 5%; /* Adjust as needed for medium screens */
+        width: 90%; 
+        left: 5%; 
     }
     .container {
         background-color: hsl(222, 26%, 31%);
@@ -174,9 +180,9 @@ form {
 @media screen and (max-width: 768px) {
     .cal {
         width: 90%;
-        height: 9px; /* Adjust as needed for smaller screens */
+        height: 9px; 
         left: 5%; 
-        top: 110px;/* Adjust as needed for smaller screens */
+        top: 110px;
     }
 
    
@@ -190,10 +196,10 @@ form {
 
 @media screen and (max-width: 480px) {
     .cal {
-        width: 90%; /* Adjust as needed for extra small screens */
+        width: 90%; 
         left: 5%;
-        height: -0vh; /* Adjust as needed for smaller screens */ 
-        top: 450px; /* Adjust as needed for extra small screens */
+        height: -0vh; 
+        top: 450px; 
     }
     .container {
         background-color: hsl(222, 26%, 31%);
@@ -201,6 +207,6 @@ form {
         height: 100vh;
         position: relative;
     }
-}
+} */
 
 
